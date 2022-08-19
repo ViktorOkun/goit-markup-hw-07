@@ -368,21 +368,25 @@ margin: 0;
 
 
 
-.social-network {
+.team-social {
     width: 206px;
     height: 44px;
 }
 
-.social-list {
+.team-social__list {
     display: flex;
     margin-left: 32px;
 }
 
-.social-list-icon {
+/* .social-list-icon {
     list-style: none;
+} */
+
+.team-social__item:not(:last-child) {
+    margin-right: 10px;
 }
 
-.social-link {
+.team-social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,16 +396,14 @@ margin: 0;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.team-social__link:hover,
+.team-social__link:focus {
     fill: var(--white-color);
     border-radius: 50px;
     background-color: var(--accent-color);
 }
 
-.social-list-icon:not(:last-child) {
-    margin-right: 10px;
-}
+
 
 /* customers */
 
