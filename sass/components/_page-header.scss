@@ -24,10 +24,9 @@
 
 .site-nav {
     display: flex;
-}
-
-.site-nav__list+.site-nav__list {
-    margin-left: 50px;
+    &__list+&__list {
+        margin-left: 50px;
+    }
 }
 
 .site-nav__link {
@@ -43,15 +42,13 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.site-nav__link.current {
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+    &.current {
     color: $accent-color;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus {
-    color: $accent-color;
+    }
 }
 
 .site-nav__link.current::after {
@@ -83,11 +80,10 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.site-contacts__link:hover,
-.site-contacts__link:focus {
-    color: $accent-color;
+    &:hover, &:focus {
+        color: $accent-color;
+    }
 }
 
 .site-contacts__icon {
