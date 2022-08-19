@@ -26,6 +26,14 @@ img {
     display: block;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -38,14 +46,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     /* outline: solid 1px tomato; */
-}
-
-.link {
-    text-decoration: none;
-}
-
-.list {
-    list-style: none;
 }
 
 .visually-hidden {
@@ -378,9 +378,6 @@ margin: 0;
     margin-left: 32px;
 }
 
-/* .social-list-icon {
-    list-style: none;
-} */
 
 .team-social__item:not(:last-child) {
     margin-right: 10px;
